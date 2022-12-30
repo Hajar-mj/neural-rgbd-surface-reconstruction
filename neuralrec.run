@@ -7,5 +7,5 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem 64GB
 pip3 install -r requirements.txt --user
-python3 /home/mjoun/nrgbd/external/NumpyMarhingCubes/setup.py install --user
+python3 /home/mjoun/nrgbd/external/NumpyMarchingCubes/setup.py install --user
 python3 /home/mjoun/nrgbd/optimize.py --config /home/mjoun/nrgbd/configs/breakfast_room.txt
