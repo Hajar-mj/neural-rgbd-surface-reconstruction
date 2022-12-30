@@ -2,7 +2,7 @@
 #SBATCH --chdir /home/mjoun/nrgbd
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
-#SBATCH --gpus-per-task 1
+#SBATCH --cpus-per-task 1
 #SBATCH --mem 7000
 pip3 install -r requirements.txt --user
 python3 optimize.py --config /home/mjoun/nrgbd/configs/breakfast_room.txt
