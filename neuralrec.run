@@ -5,6 +5,10 @@
 #SBATCH --partition=gpu 
 #SBATCH --qos=gpu_free 
 #SBATCH --gres=gpu:1
-#SBATCH --mem 7000
+#SBATCH --mem 64GB
 pip3 install -r requirements.txt --user
+cd external/NumpyMarchinCubes
+python3 setup.lpy install --user
+cd ..
+cd ..
 python3 optimize.py --config /home/mjoun/nrgbd/configs/breakfast_room.txt
