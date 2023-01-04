@@ -5,7 +5,7 @@
 #SBATCH --ntasks 10
 #SBATCH --partition=gpu 
 #SBATCH --qos=gpu_free 
-#SBATCH --gres=gpu:7
+#SBATCH --gres=gpu:5
 #SBATCH --mem 64GB
 pip3 install -r requirements.txt --user
 python3 /home/mjoun/nrgbd/external/NumpyMarchingCubes/setup.py install --user
