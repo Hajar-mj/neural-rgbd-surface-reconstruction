@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --chdir /home/mjoun/nrgbd
 #SBATCH --nodes 1
-#SBATCH --time 10:00:00
+#SBATCH --time 24:00:00
 #SBATCH --ntasks 10
 #SBATCH --partition=gpu 
 #SBATCH --qos=gpu_free 
-#SBATCH --gres=gpu:4
+#SBATCH --gres=gpu:2
 #SBATCH --mem 64GB
 pip3 install -r requirements.txt --user
 python3 /home/mjoun/nrgbd/external/NumpyMarchingCubes/setup.py install --user
-python3 /home/mjoun/nrgbd/optimize.py --config /home/mjoun/nrgbd/configs/breakfast_room.txt
+python3 /home/mjoun/nrgbd/optimize.py --config /home/mjoun/nrgbd/configs/tum_desk.txt

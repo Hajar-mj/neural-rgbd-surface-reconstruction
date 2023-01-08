@@ -1,4 +1,5 @@
 from load_scannet import load_scannet_data
+from load_tum import load_tum_data
 
 
 def load_dataset(args):
@@ -15,7 +16,13 @@ def load_dataset(args):
 
     # Calls to other dataloaders go here
     # elif args.dataset_type == "":
-
+    elif args.dataset_type == "tum":
+        images, depth_images, poses, hwf, frame_indices = load_tum_data(basedir=args.datadir,
+                                                                            trainskip=args.trainskip,
+                                                                            downsample_factor=args.factor,
+                                                                            translation=args.translation,
+                                                                            sc_factor=args.sc_factor,
+                                                                            crop=args.crop)
     else:
         print('Unknown dataset type', args.dataset_type, 'exiting')
         return
