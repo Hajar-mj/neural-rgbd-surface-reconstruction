@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --chdir /home/mjoun/nrgbd
 #SBATCH --nodes 1
-#SBATCH --time 10:00:00
-#SBATCH --ntasks 10
+#SBATCH --time 11:00:00
+#SBATCH --ntasks 20
 #SBATCH --partition=gpu 
 #SBATCH --qos=gpu_free 
 #SBATCH --gres=gpu:2
