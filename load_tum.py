@@ -44,7 +44,7 @@ def load_tum_data(basedir, trainskip, downsample_factor=1, translation=0.0, sc_f
     all_poses, valid_poses = load_poses(os.path.join(basedir, 'neural_pose.txt'))
 
     # Train, val and test split
-    num_frames = len(img_files)
+    num_frames = len(depth_files)
     train_frame_ids = list(range(0, num_frames, trainskip))
 
     # Lists for the data to load into
