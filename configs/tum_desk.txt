@@ -4,7 +4,7 @@ datadir = ./data/rgbd_dataset_freiburg1_desk
 dataset_type = tum
 trainskip = 1
 
-N_iters = 300000
+N_iters = 400000
 N_rand = 1024
 N_samples = 320
 N_importance = 16
