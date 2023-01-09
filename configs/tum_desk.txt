@@ -37,4 +37,4 @@ factor = 1
 render_factor = 1
 
 i_img = 5000
-i_mesh = 200000
+i_mesh = 140000
