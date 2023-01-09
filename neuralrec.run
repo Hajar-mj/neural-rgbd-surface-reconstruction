@@ -9,4 +9,4 @@
 #SBATCH --mem 64GB
 pip3 install -r requirements.txt --user
 python3 /home/mjoun/nrgbd/external/NumpyMarchingCubes/setup.py install --user
-python3 /home/mjoun/nrgbd/optimize.py --config /home/mjoun/nrgbd/configs/rgbd_dataset_freiburg1_desk.txt
+python3 /home/mjoun/nrgbd/optimize.py --config /home/mjoun/nrgbd/configs/tum_desk.txt
